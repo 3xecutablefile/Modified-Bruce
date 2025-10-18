@@ -1,0 +1,9 @@
+{
+  "TV": {
+    "Samsung": {"power": "0x20DF10EF", "vol_up": "0x20DF40BF"},
+    "LG": {"power": "0x20DF23DC", "vol_up": "0x20DF02FD"}
+  },
+  "AC": {
+    "Daikin": {"power": "0x11223344", "temp_up": "0x11223355"}
+  }
+}
