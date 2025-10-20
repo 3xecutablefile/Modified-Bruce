@@ -20,7 +20,7 @@ Lead Developer: 3xecutablefile
 
 ### Building from Source
 1. Install [PlatformIO](https://platformio.org/).
-2. Clone this repository: `git clone <repo-url>`
+2. Clone this repository: `git clone https://github.com/3xecutablefile/Modified-Bruce.git`
 3. Navigate to the project directory: `cd apex-firmware`
 4. Build for your device: `pio run -e <board-name>` (see platformio.ini for available boards)
 5. (Optional) Merge binaries if needed: `python merge_bins.py`
