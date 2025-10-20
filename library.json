@@ -1,0 +1,16 @@
+{
+  "name": "APEX",
+  "version": "1.0.0",
+  "description": "APEX main firmware",
+  "keywords": "esp32, m5stack, cardputer, lilygo, t-embed, wifi, bluetooth, rfid, nfc, badusb, rubber ducky, headless, webinterface",
+  "authors": [
+    {
+      "name": "APEX Team",
+      "email": "contact@apex.net",
+      "url": "https://apex.net/"
+    }
+  ],
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}

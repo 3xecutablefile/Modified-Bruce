@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Firmware Web Flasher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>APEX Firmware</h1>
+            <p>Advanced Pentesting & Exploitation Firmware</p>
+        </header>
+        <main>
+            <section class="flasher">
+                <h2>Web Flasher</h2>
+                <p>Select your device and flash the latest APEX firmware. Requires Chrome browser with Web Serial API enabled.</p>
+                <div class="device-selector">
+                    <label for="device">Select Device:</label>
+                    <select id="device">
+                        <option value="cardputer">M5Stack Cardputer</option>
+                        <option value="m5stick-c-plus-1-1">M5StickC Plus 1.1</option>
+                        <option value="m5stick-c-plus-2">M5StickC Plus 2</option>
+                        <option value="lilygo-t-embed">LilyGO T-Embed</option>
+                        <option value="lilygo-t-embed-cc1101">LilyGO T-Embed CC1101</option>
+                        <option value="lilygo-cc1101">LilyGO CC1101</option>
+                        <option value="m5stack-cardputer">M5Stack Cardputer</option>
+                        <option value="m5stick-c-v1">M5StickC V1</option>
+                        <option value="m5stick-c-v2">M5StickC V2</option>
+                        <option value="dstike-8266">Dstike 8266</option>
+                    </select>
+                </div>
+                <button id="connect-btn">Connect Device</button>
+                <button id="flash-btn" disabled>Flash Firmware</button>
+                <div id="status">Status: Ready</div>
+                <div id="progress" style="display: none;">
+                    <progress value="0" max="100"></progress>
+                    <span id="progress-text">0%</span>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 APEX Firmware. Lead Dev: 3xecutablefile</p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/esptool-js@0.1.0/bundle.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
